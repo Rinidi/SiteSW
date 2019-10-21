@@ -23,7 +23,7 @@
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
-                    <h3>Portal do professor</h3>
+                    <h3>Acesso ao estoque</h3>
                     <?php
                     if(isset($_SESSION['nao_autenticado'])):
                         ?>
