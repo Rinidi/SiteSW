@@ -1,19 +1,25 @@
+/*div {
+    border-radius: 10px;
+    border: 1px solid black;
+}*/
+
 body {
-    background: rgb(58, 64, 73);
-    font: normal 15pt Arial;
+    /*background: rgb(58, 64, 73);*/
+    background-color: #f9f9f9;
+}
+
+li {
+    margin-right: 10px;
 }
 
 footer {
-    color: white;
-    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    font: bold 15pt Arial;
     font-style: italic;
+    background: rgb(54, 54, 54);
 }
-
-
-/*div {
-    border-radius: 10px;
-    border: solid 2px black;
-}*/
 
 .box {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
@@ -24,13 +30,13 @@ footer {
 }
 
 .nav-link:hover {
-    color: white;
-    background: rgb(66, 66, 66);
+    margin-bottom: -1px;
+    border-bottom: 1px solid black;
 }
 
 .nav-link-image {
     color: white;
-    font: normal 18pt Arial;
+    font: normal 20pt Arial;
     padding: 10px;
     text-align: center;
 }
@@ -42,12 +48,15 @@ footer {
 .nav-link-image:hover {
     text-decoration: none;
     color: white;
-    background: rgba(32, 32, 32, 0.3);
     border-radius: 5px;
 }
 
 .titulo {
     font-weight: bold;
+}
+
+.box-shadow {
+    box-shadow: 2px 2px 2px rgb(29, 29, 29);
 }
 
 .margin-md-top {
@@ -58,11 +67,21 @@ footer {
     border-radius: 10px;
 }
 
-.barra-vertical {
-    height: 100%;
-    margin: 0.5rem 0;
-    overflow: hidden;
-    border-left: 2px solid black;
+.rod {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.rounded-md {
+    border-radius: 5px;
+}
+
+.shadow-md {
+    text-shadow: 2px 2px 2px rgb(34, 34, 34);
+}
+
+.shadow-sm {
+    text-shadow: 1px 1px 2px rgb(34, 34, 34);
 }
 
 .Paragrafo {
@@ -70,8 +89,177 @@ footer {
     text-indent: 3em;
 }
 
+.label-form {
+    font: bold 15pt Arial;
+}
+
+.txt-nome {
+    margin-left: 20px;
+    margin-top: 10px;
+    font: bold 14pt Arial;
+    color: rgb(90, 90, 204);
+}
+
+.txt-data {
+    font: bold 13pt Arial;
+    margin-top: 11px;
+    margin-left: 15px;
+    color: rgb(107, 89, 129);
+}
+
+.txt-comentario {
+    border-top: 1px solid black;
+    padding-top: 5px;
+    font: normal 14pt Arial;
+}
+
+.h1-txt {
+    font: bold 25pt Arial;
+}
+
+.h3-txt {
+    font: normal 15pt Arial;
+    font-weight: bold;
+}
+
+.h4-txt {
+    font: normal 17pt Arial;
+    font-weight: bold;
+}
+
+.p-txt {
+    font: normal 14pt Arial;
+}
+
+#box-icon-logo {
+    padding: 10px;
+    border-right: 1px solid rgb(121, 121, 121);
+}
+
+#btn-enviar {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#comentario {
+    margin-left: 20px;
+}
+
+#icon {
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+
+#box-comentario {
+    border: 1px solid rgb(65, 65, 65);
+    margin-top: 30px;
+    background: #c9c9c9;
+}
+
+#form-teste {
+    border: 1px solid black;
+}
+
+#align-center {
+    margin-top: 20px;
+    text-align: center;
+}
+
 #logo {
-    margin-top: -5px;
+    margin-left: 50px;
+}
+
+#txt-logo {
+    margin-top: 5px;
+    margin-left: 10px;
+    font: normal 22pt Arial;
+}
+
+#div-bio {
+    background: rgb(173, 173, 173);
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+}
+
+#div-md {
+    margin-top: 30px;
+    padding-top: 50px;
+}
+
+#bot-margin-md {
+    margin-bottom: 50px;
+}
+
+#margin-sm-top {
+    margin-top: 30px;
+}
+
+#margin-md-top {
+    margin-top: 50px;
+}
+
+#txt-lg {
+    font-size: 3vw;
+    background: aliceblue;
+    padding-top: 3px;
+    padding-left: 15px;
+    border-radius: 3px;
+}
+
+#txt-md {
+    margin-top: 10px;
+    font-size: 2vw;
+    background: aliceblue;
+    border-radius: 3px;
+    border-top: 3px;
+    padding-left: 15px;
+}
+
+#navbar {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: rgb(71, 77, 71);
+    font: normal 16pt Arial;
+}
+
+#btn-login {
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 12px;
+    font: normal 16pt Arial;
+}
+
+#div-primary {
+    background-image: url(../img/fundos/fundo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    /*background-color: #0064CB;*/
+    padding-bottom: 250px;
+    padding-top: 100px;
+    box-shadow: 0px 5px 10px rgb(26, 26, 26);
+}
+
+#div-secondary {
+    color: aliceblue;
+    margin-top: 100px;
+    padding-bottom: 80px;
+    /*background: rgb(97, 97, 97);*/
+    background: rgb(61, 102, 143);
+    box-shadow: 0px -5px 10px rgb(26, 26, 26);
+}
+
+#div-final {}
+
+#nav-link-image {
+    margin-top: 15px;
 }
 
 #simple-content {
@@ -79,18 +267,4 @@ footer {
     padding: 5px;
     background: rgba(245, 245, 245, 0.9);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-}
-
-#article {
-    padding: 10px;
-}
-
-#nav-link-image {
-    margin-top: 5px;
-}
-
-#nav-sup {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font: normal 17pt Arial;
 }
