@@ -25,6 +25,65 @@ footer {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
+.sec {
+    text-align: center;
+    background: rgb(245, 244, 244);
+    padding: 10px;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-left: 1px solid rgb(204, 204, 204);
+    border-right: 1px solid rgb(204, 204, 204);
+}
+
+.sec-f {
+    text-align: center;
+    background: rgb(245, 244, 244);
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.vertical-center {
+    vertical-align: center;
+}
+
+.data {
+    width: 110px;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 600px;
+    overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.img-float-r {
+    display: block;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.img-float-f {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.icon-float-l {
+    float: left;
+    margin-top: 10px;
+}
+
+#txt-float {
+    float: right;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
 .nav-link {
     color: white;
 }
@@ -51,16 +110,42 @@ footer {
     border-radius: 5px;
 }
 
+.h1-tittle {
+    font: normal 35pt Arial;
+}
+
+.h2-tittle {
+    font: bold 30pt Arial;
+}
+
+.h3-tittle {
+    font: normal 25pt Arial;
+}
+
+.h4-tittle {
+    font: bold 20pt Arial;
+    text-align: start;
+}
+
+.h5-tittle {
+    font: bold 18pt Arial;
+}
+
+.h6-tittle {
+    font: bold 13pt Arial;
+}
+
+.sub-t {
+    font: bold 16pt Arial;
+    margin-left: 20px;
+}
+
 .titulo {
     font-weight: bold;
 }
 
 .box-shadow {
     box-shadow: 2px 2px 2px rgb(29, 29, 29);
-}
-
-.margin-md-top {
-    margin-top: 15px;
 }
 
 .rouded {
@@ -84,33 +169,62 @@ footer {
     text-shadow: 1px 1px 2px rgb(34, 34, 34);
 }
 
+.img-b {
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(63, 63, 63);
+}
+
 .Paragrafo {
+    line-height: 1.5;
     text-align: justify;
     text-indent: 3em;
+}
+
+.line-h-md {
+    line-height: 1.5;
 }
 
 .label-form {
     font: bold 15pt Arial;
 }
 
+.txt-box {
+    font: normal 15pt Calibri;
+    text-align: justify;
+    color: rgb(100, 100, 100);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .txt-nome {
-    margin-left: 20px;
-    margin-top: 10px;
-    font: bold 14pt Arial;
-    color: rgb(90, 90, 204);
+    font: bold 15pt Arial;
+    color: rgb(47, 47, 189);
 }
 
 .txt-data {
-    font: bold 13pt Arial;
-    margin-top: 11px;
+    font: normal 11pt Arial;
+    margin-top: 14px;
     margin-left: 15px;
-    color: rgb(107, 89, 129);
+    color: rgb(136, 136, 136);
+}
+
+.txt-email {
+    font: normal 12pt Arial;
+    color: rgb(104, 104, 104);
 }
 
 .txt-comentario {
-    border-top: 1px solid black;
     padding-top: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
     font: normal 14pt Arial;
+}
+
+.barra-vertical {
+    height: 1px;
+    background-color: rgb(187, 187, 187);
 }
 
 .h1-txt {
@@ -122,18 +236,73 @@ footer {
     font-weight: bold;
 }
 
-.h4-txt {
-    font: normal 17pt Arial;
-    font-weight: bold;
-}
-
 .p-txt {
     font: normal 14pt Arial;
 }
 
-#box-icon-logo {
-    padding: 10px;
-    border-right: 1px solid rgb(121, 121, 121);
+#link-home {
+    color: rgb(73, 73, 73);
+}
+
+#link-home:hover {
+    text-decoration: none;
+}
+
+body#projeto {
+    background: rgb(226, 226, 226);
+}
+
+body#sobre {
+    background: rgb(226, 226, 226);
+}
+
+body#contato {
+    background: rgb(226, 226, 226);
+}
+
+body#estoque {
+    background: rgb(226, 226, 226);
+}
+
+.bg-white {
+    background: rgb(252, 252, 252);
+}
+
+#sub-sec1 {
+    display: none;
+}
+
+ul.list {
+    list-style-type: disc;
+}
+
+.sub-item {
+    padding-top: 7px;
+    padding-left: 30px;
+    padding-bottom: 7px;
+}
+
+#sub-item-1 {
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+#sub-item-2 {
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+#sub-item-2 {
+    padding-bottom: -5px;
+}
+
+.pad-md {
+    /*padding-left: 80px;*/
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#pad-fundo {
+    padding-top: 10px;
+    padding-bottom: 100px;
 }
 
 #btn-enviar {
@@ -145,15 +314,84 @@ footer {
     margin-left: 20px;
 }
 
+#div-estoque {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+#sub-sec1 {
+    padding-top: 10px;
+    width: 100%;
+    font: normal 12pt Calibri;
+}
+
 #icon {
-    border-radius: 5px;
+    border-radius: 50px;
     box-shadow: 1px 1px 3px black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.margin-md-top {
+    margin-top: 50px;
+}
+
+.margin-sm-top {
+    margin-top: 20px;
+}
+
+.margin-lg-bot {
+    margin-bottom: 100px;
+}
+
+.margin-md-bot {
+    margin-bottom: 50px;
+}
+
+.margin-sm-bot {
+    margin-bottom: 25px;
+}
+
+.margin-left-sm {
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+.p-md {
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
+#info1 {
+    display: none;
+}
+
+#info2 {
+    display: none;
+}
+
+#fundo-contato {
+    background-position-x: 100px;
+    background-position-y: 20px;
+    background-size: 25vw;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
 }
 
 #box-comentario {
-    border: 1px solid rgb(65, 65, 65);
-    margin-top: 30px;
-    background: #c9c9c9;
+    border-top: 1px solid rgb(168, 168, 168);
+    border-bottom: 1px solid rgb(168, 168, 168);
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#local {
+    font: normal 17pt Calibri;
 }
 
 #form-teste {
@@ -169,6 +407,13 @@ footer {
     margin-left: 50px;
 }
 
+#img-bio {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 20vw;
+}
+
 #txt-logo {
     margin-top: 5px;
     margin-left: 10px;
@@ -176,13 +421,9 @@ footer {
 }
 
 #div-bio {
-    background: rgb(173, 173, 173);
-    padding: 5px;
-    margin: auto;
-    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-    color: rgb(255, 255, 255);
 }
 
 #div-md {
@@ -206,6 +447,7 @@ footer {
     font-size: 3vw;
     background: aliceblue;
     padding-top: 3px;
+    padding-bottom: 3px;
     padding-left: 15px;
     border-radius: 3px;
 }
@@ -217,12 +459,13 @@ footer {
     border-radius: 3px;
     border-top: 3px;
     padding-left: 15px;
+    padding-bottom: 2px;
 }
 
 #navbar {
     padding-top: 30px;
     padding-bottom: 20px;
-    background: rgb(71, 77, 71);
+    background: rgb(54, 54, 54);
     font: normal 16pt Arial;
 }
 

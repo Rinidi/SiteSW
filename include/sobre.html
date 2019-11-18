@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Escola CEP</title>
+    <title>Smart Wallet</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- Bulma CSS -->
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
-<body>
+<body id="sobre">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
         <ul class="navbar-nav mr-auto">
             <div class="row justify-content-center">
@@ -32,13 +32,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
                 <div class="row justify-content-center">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="../index.php">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="projeto.html">Projeto</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="sobre.html">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
@@ -51,42 +51,73 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <a id="btn-login" href="include/login.php" class="btn btn-primary btn-block" role="button" aria-pressed="true">Login</a>
+                <a id="btn-login" href="login.php" class="btn btn-primary btn-block" role="button" aria-pressed="true">Login</a>
             </div>
         </div>
     </nav>
-    <div id="article" class="container margin-md-top">
-        <h1 class="h1-txt">A Equipe</h1>
+    <div id="" class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-5">
-                <div class="container" id="div-bio">
-                    <h4 class="h4-txt">Lucas teles</h4>
-                    <div class="row justify-content-center">
-                        <div class="col-10">
-                            <img src="../img/lucas.jpg" class="img-fluid" />
+            <div id="pad-fundo" class="col-10 bg-white">
+                <h2 class="h2-tittle margin-md-top" style="margin-left: 30px;">A Equipe</h2>
+                <div class="row justify-content-center margin-sm-top">
+                    <div class="col-5">
+                        <div id="div-nome">
+                            <h4 class="h4-tittle align-center">Lucas Teles</h4>
                         </div>
-                        <p>
-                            Estudante do Centro de Educação Profissional - "Tancredo Neves" CEP-brazópolis realizou este trabalho no ano de 2019 ao qual estava cursando o 3º Ano do Ensino Médio integrado ao Curso técnico em informática
-                        </p>
+                        <div id="div-img" class="row justify-content-center">
+                            <img id="img-bio" src="../img/lucas.jpg" class="img-fluid" />
+                        </div>
+                        <div id="info1" class="margin-sm-bot">
+                            <div class="row margin-left-sm">
+                                <img class="img-fluid" src="../img/github-logo.png" width="30" />
+                                <h6 id="txt-float" class="h6-tittle"> LucasGitDev</h6>
+                            </div>
+                            <div class="row margin-left-sm">
+                                <img class="img-fluid" src="../img/gmail.png" width="30" />
+                                <h6 id="txt-float" class="h6-tittle"> ls5651405@gmail.com</h6>
+                            </div>
+                            <div class="row margin-left-sm">
+                                <img class="img-fluid" src="../img/whatsapp.png" width="30" />
+                                <h6 id="txt-float" class="h6-tittle"> (35) 99720-1565</h6>
+                            </div>
+                        </div>
+                        <div id="div-bio">
+                            <p class="Paragrafo p-md">
+                                Estudante do Centro de Educação Profissional - "Tancredo Neves" CEP-brazópolis realizou este trabalho no ano de 2019 ao qual estava cursando o 3º Ano do Ensino Médio integrado ao Curso técnico em informática.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-5">
-                <div class="container" id="div-bio">
-                    <h4 class="h4-txt">Renan Vítor</h4>
-                    <div class="row justify-content-center">
-                        <div class="col-10">
-                            <img src="../img/renan.jpg" class="img-fluid" />
+                    <div class="col-5" style="margin-left: 50px;">
+                        <div id="div-nome">
+                            <h4 class="h4-tittle align-center">Renan Vítor</h4>
                         </div>
-                        <p>
-                            Estudante do Centro de Educação Profissional - "Tancredo Neves" CEP-brazópolis realizou este trabalho no ano de 2019 ao qual estava cursando o 3º Ano do Ensino Médio integrado ao Curso técnico em informática
-                        </p>
+                        <div id="div-img" class="row justify-content-center">
+                            <img id="img-bio" src="../img/renan.jpg" class="img-fluid" />
+                        </div>
+                        <div id="info2" class="margin-sm-bot">
+                            <div class="row margin-left-sm">
+                                <img class="img-fluid" src="../img/github-logo.png" width="30" />
+                                <h6 id="txt-float" class="h6-tittle"> Rinidi</h6>
+                            </div>
+                            <div class="row margin-left-sm">
+                                <img class="img-fluid" src="../img/gmail.png" width="30" />
+                                <h6 id="txt-float" class="h6-tittle"> renanpiranguinho@gmail.com</h6>
+                            </div>
+                            <div class="row margin-left-sm">
+                                <img class="img-fluid" src="../img/whatsapp.png" width="30" />
+                                <h6 id="txt-float" class="h6-tittle"> (35) 99861-8490</h6>
+                            </div>
+                        </div>
+                        <div id="div-bio">
+                            <p class="Paragrafo p-md">
+                                Estudante do Centro de Educação Profissional - "Tancredo Neves" CEP-brazópolis realizou este trabalho no ano de 2019 ao qual estava cursando o 3º Ano do Ensino Médio integrado ao Curso técnico em informática.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <section>
 
     </section>

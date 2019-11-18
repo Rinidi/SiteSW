@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -21,30 +21,33 @@
 <body>
     <section class="hero is-fullheight">
         <div class="hero-body">
-            <div class="container has-text-centered">
+            <div class="container">
                 <div class="column is-4 is-offset-4">
-                    <h3>Sistema de Estoque</h3>
+                    <h3 class="align-center">Sistema de Estoque</h3>
                     <?php
-                    if(isset($_SESSION['nao_autenticado'])):
+                    if (isset($_SESSION['nao_autenticado'])) :
                         ?>
-                    <div class="notification is-danger">
-                        <p>ERRO: Usuário ou senha inválidos.</p>
-                    </div>
+                        <div class="notification is-danger">
+                            <p>ERRO: Usuário ou senha inválidos.</p>
+                        </div>
                     <?php
                     endif;
                     unset($_SESSION['nao_autenticado'])
                     ?>
                     <div class="box">
                         <form action="control/gerencia-login.php" method="POST">
+
                             <div class="field">
+                                <label class="label-form" for="nome">Usuário:</label>
                                 <div class="control">
-                                    <input name="usuario" name="text" class="input is-large" placeholder="Usuário" autofocus="">
+                                    <input id="nome" name="usuario" class="input is-large" placeholder="Usuário" autofocus="">
                                 </div>
                             </div>
 
                             <div class="field">
                                 <div class="control">
-                                    <input name="senha" class="input is-large" type="password" placeholder="Senha">
+                                    <label class="label-form" for="senha">Senha:</label>
+                                    <input id="senha" name="senha" class="input is-large" type="password" placeholder="Senha">
                                 </div>
                             </div>
                             <button type="submit" class="button is-block is-dark is-large is-fullwidth">Entrar</button>

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Escola CEP</title>
+    <title>Smart Wallet</title>
+    <link rel="shortcut icon" type="image/png" href="../img/logo.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- Bulma CSS -->
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
-<body>
+<body id="projeto">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
         <ul class="navbar-nav mr-auto">
             <div class="row justify-content-center">
@@ -32,10 +33,10 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
                 <div class="row justify-content-center">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="../index.php">Início</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="projeto.html">Projeto</a>
                         </li>
                         <li class="nav-item">
@@ -51,7 +52,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <a id="btn-login" href="include/login.php" class="btn btn-primary btn-block" role="button" aria-pressed="true">Login</a>
+                <a id="btn-login" href="login.php" class="btn btn-primary btn-block" role="button" aria-pressed="true">Login</a>
             </div>
         </div>
     </nav>
@@ -72,17 +73,179 @@
                     RFID funciona de maneira semelhante. Um sinal é enviado a um transponder, o qual é ativado e reflete de volta o sinal (sistema passivo) ou transmite seu próprio sinal (sistemas ativos).
                 </p>
             </div>
-            <div id="img-margim-right" class="col-5">
-                <img class="img-fluid" src="img/rf-2.png" />
-            </div>
+            
         </div>
     </div>-->
+
     <div class="container">
-        <h1 class="h1-txt" style="text-align: center; margin-top:50px; margin-bottom: 30px; font-size: 40pt;">Página em manutenção</h1>
+        <div class="row justify-content-center">
+            <div id="pad-fundo" class="col-10 bg-white">
+
+                <!--RFID-->
+                <!--TOPICO INTRODUÇÃO-->
+                <div class="txt-box margin-md-top">
+                    <h2 class="h2-tittle">Smart Wallet</h2>
+                    <h4 class="h4-tittle margin-sm-top">Introdução</h4>
+                    <img class="img-fluid img-float-r" src="../img/logo.png" width="200" style="margin-right: 60px; margin-left: 50px;" />
+                    <p class="Paragrafo margin-sm-top">
+                        Smart Wallet é um projeto que auxilia no processo de compra mostrando pro cliente o que está dentro do seu carrinho e informações como o preço de cada produto e o total da compra.
+                    </p>
+                    <p class="Paragrafo">
+                        É constituído por um circuito implantado em um carrinho de compras comum, que possibilita ao consumidor obter grande parte das informações gerais e específicas de cada produto.
+                    </p>
+                </div>
+
+                <!--TOPICO OBJETIVO-->
+                <div class="txt-box">
+                    <h4 class="h4-tittle margin-sm-top">Objetivos</h4>
+                    <p class="Paragrafo margin-sm-top">
+                        De forma geral o projeto Smart Wallet visa auxiliar o processo de compra em estabelecimentos de consumo diversificado, fornecer ao cliente o máximo de informações possíveis, e evitar transtornos no ambiente econômico. O projeto envolve diversas tecnologias
+                        que devem ser estudadas para sua aplicação, todas são de conhecimento extracurricular e necessitam de empenho e dedicação para seu total aprendizado.
+                    </p>
+                </div>
+
+                <!--TOPICO DESENVOLVIMENTO-->
+                <div class="txt-box margin-sm-top">
+                    <h4 class="h4-tittle margin-sm-top">Desolvimento</h4>
+                    <p class="Paragrafo margin-sm-top">
+                        Ao longo do projeto será necessário a utilização de várias tecnologias para alcançar os objetivos estabelecidos, entre estas tecnologias podemos citar o RFID que é uma identificação por radiofrequência, desenvolvimento na plataforma android e a aplicação
+                        de conexões remotas.
+                    </p>
+                    <p class="Paragrafo">
+                        Dado como explicado o funcionamento do sistema, será citado a necessidade da utilização de cada tecnologia empregada e como esta serão aplicadas ao referido projeto.
+                    </p>
+                    <p class="Paragrafo">
+                        O <u>RFID</u> será responsável por permitir a transmissão de informações através de uma identificação única por radiofrequência que será emitida de uma “TAG” (dispositivo emissor de ondas de rádio) e lida por um módulo RC-522 (dispositivo
+                        receptor e identificador de ondas de rádio), possibilitando uma identificação própria para cada produto.
+                    </p>
+                </div>
+
+                <!--TOPICO ARDUINO-->
+                <div class="txt-box margin-sm-top">
+                    <h2 id="Arduino" class="h2-tittle margin-sm-top">Arduino</h2>
+                    <ul>
+                        <li class="sub-t margin-sm-top">> Arduino Mega 2560</li>
+                        <div class="row margin-sm-top">
+                            <div class="col-12 col-xl-3 col-lg-4 col-md-5"><img src="../img/arduino.jpg" class="img-fluid" style="margin-top: 50px;" /></div>
+                            <div class="col-12 col-xl-9 col-lg-8 col-md-7">
+                                <p class="Paragrafo margin-sm-top">
+                                    Foi necessário o desenvolvimento em arduino para o projeto Smart Wallet. O referido projeto conta a utilização de um microcontrolador Arduino MEGA 2560 que será responsável pela parte física da transmissão de dados, o arduino presente também serve para
+                                    quantizar as energias necessárias a serem enviadas para cada componente do circuito, sendo de extrema importância, para o pleno funcionamento do projeto, a utilização de boas práticas para montagem de circuitos elétricos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <li class="sub-t margin-sm-top">> Módulo RFID-RF522</li>
+                        <p class="Paragrafo margin-sm-top">
+                            Para que o projeto funcione como o esperado também foi necessário a aquisição de um módulo capaz de funcionar como receptor de ondas de rádio frequência e que traduza essas informações para o micro controlador Arduino poder manipular os dados recebidos.
+                            Utilizamos um Módulo RFID-RC522 que atua como o módulo mais utilizado para testes semelhantes, também é o mais acessível em termos financeiros
+                            <div class="row justify-content-center">
+                                <div class="col-4">
+                                    <img src="../img/rc522.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                        </p>
+                    </ul>
+                </div>
+
+                <!--TOPICO ANDROID-->
+                <div class="txt-box">
+                    <h2 id="Android" class="h2-tittle">Android</h2>
+                    <ul>
+                        <li class="sub-t margin-sm-top">> BuyFragment, extensão de Fragment</li>
+                        <div class="row margin-sm-top">
+                            <div class="col-12 col-xl-3 col-lg-4 col-md-5">
+                                <img src="../img/aplicativo.png" class="img-fluid" style="margin-top: 50px;" />
+                            </div>
+                            <div class="col-12 col-xl-9 col-lg-8 col-md-7">
+                                <p class="Paragrafo margin-sm-top">
+                                    A principal Classe existente na aplicação é denominada BuyFragment. Esta é uma Classe que se estende da Classe Fragment do Java. Sua funcionalidade é agir como uma tela independente que pertence a um grupo. Suas funções são gerar uma conexão com o Arduino
+                                    através do módulo Bluetooth para receber o código do produto, estabelecer outra conexão com um Webservice para utilização do código e retorno das informações do produto e tratamentos de todas as informações para inflar
+                                    uma lista (RecyclerView).
+                                </p>
+                                <p class="Paragrafo">
+                                    Para que haja uma conexão com o Arduino, a classe acessa os componentes Bluetooth do aparelho e realiza uma Thread de conexão, chamada de ConnectionThread, responsável por criar uma porta Socket entre Arduino e Android. Essa conexão se mantém com um objeto
+                                    Handler que comunica uma AsyncTask.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="Paragrafo margin-sm-top">
+                            Após ser iniciada com uma chamada feita no Handler, uma tarefa assíncrona começa a conexão e transferência de dados com o Webservice responsável por acessar o banco de dados. A classe referida envia ao Webservice o código obtido pelo Arduino e aguarda
+                            o retorno de um JSONArray, que será convertido em um JSONObject e posteriormente preencherá o objeto modelo de produto. Ainda nessa execução, o adaptador responsável por controlar o RecyclerView é notificado das alterações
+                            e realiza a execução para inflar a lista com o novo produto.
+                            <div class="row justify-content-center">
+                                <div class="col-4">
+                                    <img src="../img/android-logo.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </p>
+                    </ul>
+                </div>
+
+                <!--RFID-->
+                <!--TOPICO ORIGEM-->
+                <div class="txt-box margin-sm-top">
+                    <h2 id="Rfid" class="h2-tittle margin-sm-top">Rfid</h2>
+                    <h4 class="h4-tittle margin-sm-top">A Origem</h4>
+                    <img class="img-fluid img-float-r" src="../img/rfid-logo.png" width="400" style="border-radius: 100px;" />
+                    <p class="Paragrafo margin-sm-top">
+                        A tecnologia RFID tem suas bases na Segunda Guerra mundial, onde o sistema de radares estava por caminhar lentamente, surgiu um problema perante a identificação das naves, não era possível diferenciar os aviões aliados dos inimigos. Então percebeu-se
+                        que ao girar o avião em sem próprio eixo o sinal de rádio emitido era modificado permitindo então a identificação dos aviões aliados alemães, este foi o primeiro sistema de identificação por radiofrequência.
+                    </p>
+                    <p class="Paragrafo">
+                        Os ingleses desenvolveram um sistema para fazer essa identificação de maneira mais precisa, o sistema ficou conhecido como IFF (Identify Friend or Foe). O sistema funcionava da seguinte maneira: eram colocado aparelhos transmissores em cada avião, esses
+                        transmissores, ao receber sinal da torre de comando, transmitiam um sinal resposta permitindo a identificação de um sinal amigo.
+                    </p>
+                    <p class="Paragrafo">
+                        RFID funciona de maneira semelhante. Um sinal é enviado a um transponder, o qual é ativado e reflete de volta o sinal (sistema passivo) ou transmite seu próprio sinal (sistemas ativos).
+                    </p>
+                </div>
+
+                <!--TOPICO FUNCIONAMENTO DA TECNOLOGIA-->
+                <div class="txt-box margin-sm-top">
+                    <h4 class="h4-tittle margin-sm-top">O Funcionamento da tecnologia</h4>
+                    <p class="Paragrafo margin-sm-top">
+                        Um sistema de RFID é composto, basicamente, de uma antena, um transceptor, que faz a leitura do sinal e transfere a informação para um dispositivo leitor, e também um transponder ou etiqueta de RF (rádio frequência), que deverá conter o circuito e a informação
+                        a ser transmitida. Estas etiquetas podem estar presentes em pessoas, animais, produtos, embalagens, enfim, em equipamentos diversos.
+                    </p>
+                    <p class="Paragrafo">
+                        Assim, a antena transmite a informação, emitindo o sinal do circuito integrado para transmitir suas informações para o leitor, que por sua vez converte as ondas de rádio do RFID para informações digitais. Agora, depois de convertidas, elas poderão ser
+                        lidas e compreendidas por um computador para então ter seus dados analisados.
+
+                    </p>
+                    <div class="row justify-content-center margin-sm-top">
+                        <img src="../img/rf-1.jpg" class="img-fluid img-b">
+                    </div>
+                </div>
+
+                <!--TOPICO ETIQUETAS RFID-->
+                <div class="txt-box margin-sm-top">
+                    <h4 class="h4-tittle margin-sm-top">Etiquetas RFID</h4>
+                    <p class="margin-sm-top">Atualmente encontra-se dois tipos de etiquetas RFID: passiva e ativa.</p>
+                    <div class="row justify-content-center margin-sm-top">
+                        <img src="../img/rf-2.jpg" class="img-fluid img-b">
+                    </div>
+                    <div class="line-h-md margin-sm-top">
+                        <ul>
+                            <li><strong>Passiva</strong> – Estas etiquetas utilizam a rádio frequência do leitor para transmitir o seu sinal e normalmente têm com suas informações gravadas permanentemente quando são fabricadas. Contudo, algumas destas etiquetas
+                                são “regraváveis”.</li>
+                            <li><strong>Ativa</strong> – As etiquetas ativas são muito mais sofisticadas e caras e contam com uma bateria própria para transmitir seu sinal sobre uma distância razoável, além de permitir armazenamento em memória RAM capaz de
+                                guardar até 32 KB.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--<div class="container">
+        <h1 class="h1-txt" style="text-align: center; margin-top:50px; margin-bottom: 30px; font-size: 40pt;">Página em manutenção
+        </h1>
         <div class="row justify-content-center">
             <img src="../img/manutencao.png" />
         </div>
-    </div>
+    </div>-->
     <section>
 
     </section>

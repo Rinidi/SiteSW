@@ -16,8 +16,9 @@ session_start();
     <link rel="stylesheet" href="../css/bulma.min.css" />
     <!-- Css padrao -->
     <link rel="stylesheet" href="../css/form.css">
+    <script src="../jquery/dist/jquery.js"></script>
+    
 </head>
-
 <body>
     <section class="hero is-fullheight">
         <div class="hero-body">
@@ -52,7 +53,7 @@ session_start();
         </div>
     </section>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../jquery/dist/jquery.js"></script>
+    <script src="../js/app.js"></script>
     <script src="../popper.js/dist/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
 </body>

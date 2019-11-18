@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Escola CEP</title>
+    <title>Smart Wallet</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
     <link rel='stylesheet' type='text/css' href='css/estilo.css'>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -72,31 +73,37 @@
         </div>
         <div class="row justify-content-between">
             <div id="align-center" class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div class="d-flex justify-content-center">
-                    <img src="img/arduino-logo.png" class="img-fluid" width="100px" />
-                </div>
-                <div class="margin-md-top">
-                    <h3 class="h3-txt">Desenvolvido em Arduino</h3>
-                    <p>Utilização da linguagem Arduino para programação do Microcontrolador</p>
-                </div>
+                <a id="link-home" href="include/projeto.html#Arduino">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/arduino-logo.png" class="img-fluid" width="100px" />
+                    </div>
+                    <div class="margin-md-top">
+                        <h3 class="h3-txt">Desenvolvido em Arduino</h3>
+                        <p>Utilização da linguagem Arduino para programação do Microcontrolador</p>
+                    </div>
+                </a>
             </div>
             <div id="align-center" class="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-12">
-                <div class="d-flex justify-content-center">
-                    <img src="img/android-logo.png" class="img-fluid" width="100px" />
-                </div>
-                <div class="margin-md-top">
-                    <h3 class="h3-txt">Desenvolvido em Android</h3>
-                    <p>Desenvolvimento do aplicativo android para interface com o cliente</p>
-                </div>
+                <a id="link-home" href="include/projeto.html#Android">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/android-logo.png" class="img-fluid" width="100px" />
+                    </div>
+                    <div class="margin-md-top">
+                        <h3 class="h3-txt">Desenvolvido em Android</h3>
+                        <p>Desenvolvimento do aplicativo android para interface com o cliente</p>
+                    </div>
+                </a>
             </div>
             <div id="align-center" class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <img src="img/rfid-logo.png" class="img-fluid" width="100px" />
-                </div>
-                <div class="margin-md-top">
-                    <h3 class="h3-txt">Tecnologia RFID</h3>
-                    <p>Tecnologia de identificação por ondas de radiofrequêcia</p>
-                </div>
+                <a id="link-home" href="include/projeto.html#Rfid">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/rfid-logo.png" class="img-fluid" width="100px" />
+                    </div>
+                    <div class="margin-md-top">
+                        <h3 class="h3-txt">Tecnologia RFID</h3>
+                        <p>Tecnologia de identificação por ondas de radiofrequêcia</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -129,19 +136,19 @@
     </div>
 
     <div id="div-tertiary" class="container-fluid">
-        <?php $result = mysqli_query($conexao, "SELECT * from tb_comentarios WHERE ver=1"); ?>
+        <?php $result = mysqli_query($conexao, "SELECT * from comentarios WHERE ver=1 ORDER BY id"); ?>
         <div class="container">
             <?php while ($row = mysqli_fetch_array($result)) { ?>
-                <div id="box-comentario" class="row justify-content-start">
-                    <div id="box-icon-logo" >
-                        <img id="icon" src="img/renan-perfil-image.jpg" class="img-fluid" width="100" />
+                <div id="box-comentario" class="row justify-content-start margin-md-top">
+                    <div class="col-2" id="box-icon-logo">
+                        <p class="txt-nome align-center margin-sm-top"><?php echo $row['nome']; ?></p>
+                        <p class="txt-email align-center margin-sm-top"><?php echo $row['email']; ?></p>
+                        <img id="icon" src="img/icons/<?php echo $row['icon']; ?>.bmp" class="img-fluid margin-sm-top" width="100" />
                     </div>
-                    <div id="comentario">
-                        <div class="row">
-                            <p class="txt-nome"><?php echo $row['nome']; ?></p>
-                            <p class="txt-data"><?php echo $row['data']; ?></p>
-                        </div>
+                    <div class="col-9" id="comentario">
+                        <p class="txt-data">Postado em <?php echo $row['data']; ?></p>
                         <p class="txt-comentario"><?php echo $row['comentario']; ?></p>
+                        <div class="barra-vertical margin-sm-top"></div>
                     </div>
                 </div>
             <?php } ?>
